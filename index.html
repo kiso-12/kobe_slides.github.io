@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地方貢献アプリ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1>地方貢献アプリ</h1>
+            </section>
+
+            ---
+
+            <section>
+                <h2>なぜ地方貢献アプリなのか？</h2>
+                <h3>地方の課題</h3>
+                <ul>
+                    <li>高齢化: 人口減少、地域活力の低下、孤立問題</li>
+                    <li>デジタルデバイド: IT活用による情報格差、機会損失</li>
+                </ul>
+            </section>
+
+            ---
+
+            <section>
+                <h2>高齢者向けマッチングアプリ</h2>
+            </section>
+
+            ---
+
+            <section>
+                <h2>解決する課題と期待される効果</h2>
+                <div class="r-hstack">
+                    <div class="r-vstack">
+                        <h4>解決する課題</h4>
+                        <ul>
+                            <li>高齢者の孤独感や孤立の解消</li>
+                            <li>日常生活のちょっとした困りごと</li>
+                            <li>地域住民のイベント参加機会不足</li>
+                        </ul>
+                    </div>
+                    <div class="r-vstack">
+                        <h4>期待される効果</h4>
+                        <ul>
+                            <li>高齢者の生活の質向上</li>
+                            <li>新たなコミュニティの設立</li>
+                            <li>地域イベントへの参加促進</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            ---
+
+            <section>
+                <h2>実装したい機能</h2>
+                <div class="r-hstack">
+                    <div class="r-vstack">
+                        <h4>1. プロフィール設定</h4>
+                        <ul>
+                            <li>ニックネーム、趣味・関心事</li>
+                            <li>居住エリア設定</li>
+                        </ul>
+                    </div>
+                    <div class="r-vstack">
+                        <h4>2. 話し相手マッチング</h4>
+                        <ul>
+                            <li>共通の趣味、地域に基づいた相手検索</li>
+                            <li>おすすめユーザー表示</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="r-hstack">
+                    <div class="r-vstack">
+                        <h4>3. シンプルなチャット</h4>
+                        <ul>
+                            <li>分かりやすいテキストメッセージ</li>
+                            <li>定型文、スタンプ利用</li>
+                        </ul>
+                    </div>
+                    <div class="r-vstack">
+                        <h4>4. 地域紹介</h4>
+                        <ul>
+                            <li>イベント案内</li>
+                            <li>お店の紹介</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            ---
+
+            <section>
+                <h2>使用言語</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>python</li>
+                </ul>
+            </section>
+
+            ---
+
+            <section>
+                <h2>作成のためにこれからやること</h2>
+                <ol>
+                    <li>JavaScriptの学習</li>
+                    <li>**アプリの要件定義・設計**: ヒアリングに基づいた機能とUI/UXの具体化</li>
+                    <li>**プロトタイプ開発**: MVP（最小限の機能）の実装</li>
+                    <li>**ユーザーテストと改善**: 玉野市の高齢者の方々からのフィードバック収集</li>
+                    <li>**持続可能な運営モデルの検討**: 地域連携の具体化、運営体制</li>
+                </ol>
+            </section>
+
+            ---
+
+            <section>
+                <h2>ご清聴ありがとうございました</h2>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'slow',
+            controls: true,
+            // progress: false, // CSSで非表示にするため、ここではコメントアウトまたは削除
+            center: true,
+
+            width: 1920,
+            height: 1080,
+            margin: 0.05,
+            minScale: 0.2,
+            maxScale: 1.0,
+
+            fragments: false, // アニメーション要素（fragment）を無効化
+
+            // キーボードの条件を定義する関数
+            keyboardCondition: function( event ) {
+                // 上矢印キー (keyCode 38) または下矢印キー (keyCode 40) の場合
+                if ( event.keyCode === 38 || event.keyCode === 40 ) {
+                    return false; // 何も起こらないようにする
+                }
+                // 左矢印キー (keyCode 37) または右矢印キー (keyCode 39) またはスペースキー (keyCode 32) の場合
+                else if ( event.keyCode === 37 || event.keyCode === 39 || event.keyCode === 32 ) {
+                    return true; // スライドの移動を許可する
+                }
+                return true; // それ以外のキーは通常通り動作させる
+            },
+
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
