@@ -1,0 +1,143 @@
+/* custom.css */
+
+/* 全体的なフォントと背景 */
+.reveal {
+    font-family: 'Noto Sans JP', 'Hiragino Sans', 'メイリオ', 'Meiryo', sans-serif; /* 読みやすいゴシック体 */
+    background: linear-gradient(135deg, #f0f8ff, #e0f2f7); /* 淡いグラデーション背景 */
+}
+
+/* テキストの基本色 */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal p,
+.reveal li {
+    color: #333333; /* 濃いグレーで読みやすく */
+    text-transform: none !important; /* 強制的に大文字変換を無効化 */
+}
+
+/* タイトルスライド */
+.reveal section.present h1 {
+    font-size: 3.5em; /* 大きめのタイトル */
+    color: #007bff; /* メインカラー */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.reveal section.present h3 {
+    color: #555555;
+    font-weight: normal;
+}
+.reveal section.present p {
+    color: #777777;
+    font-size: 0.9em;
+}
+
+/* 他のスライドの見出し */
+.reveal h2 {
+    font-size: 2.2em;
+    color: #0056b3; /* 濃いめの青 */
+    border-bottom: 3px solid #ffa07a; /* アクセントカラーの下線 */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.reveal h3 {
+    font-size: 1.5em;
+    color: #4CAF50; /* 緑系のアクセントカラー */
+    margin-bottom: 15px;
+}
+.reveal h4 {
+    font-size: 1.2em;
+    color: #ff8c00; /* 暖かみのあるオレンジ */
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ffd700;
+    padding-bottom: 5px;
+}
+
+/* 本文とリスト */
+.reveal p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.reveal ul {
+    list-style: disc; /* デフォルトの点を残す */
+    padding-left: 1.5em; /* インデント */
+    font-size: 1.05em;
+    line-height: 1.8; /* 行間を広く */
+    margin-bottom: 1em;
+}
+.reveal ul li {
+    margin-bottom: 8px; /* リスト項目間の余白 */
+}
+.reveal ol {
+    list-style: decimal;
+    padding-left: 1.5em;
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+}
+.reveal ol li {
+    margin-bottom: 8px;
+}
+
+/* 画像のスタイル */
+.reveal section img {
+    max-width: 75%; /* 画像の最大幅を少し小さく */
+    height: auto;
+    margin: 20px auto; /* 中央寄せ */
+    border: 3px solid #007bff; /* メインカラーの枠線 */
+    border-radius: 12px; /* より丸みを大きく */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* 影を強調 */
+    display: block; /* 中央寄せのため */
+}
+
+/* 横並びのスタック (r-hstack) */
+.r-hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* 垂直方向上寄せ（テキストの始まりを揃える） */
+    justify-content: center;
+    gap: 40px; /* 要素間のスペースを広げる */
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* 縦並びのスタック (r-vstack) - カードデザイン */
+.r-vstack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 25px; /* パディングを増やす */
+    border: 1px solid #cceeff; /* 淡い青の枠線 */
+    border-radius: 15px; /* より大きな角丸 */
+    background-color: #ffffff; /* 白い背景 */
+    flex: 1;
+    min-width: 320px; /* 最小幅を確保 */
+    max-width: 45%; /* 幅を調整 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* 影を柔らかく */
+    transition: transform 0.3s ease; /* ホバーエフェクト用 */
+}
+.r-vstack:hover {
+    transform: translateY(-5px); /* ホバーで少し浮き上がる */
+}
+
+
+/* フッター的なテキスト */
+.reveal section p small {
+    color: #888888;
+}
+
+/* 最終スライドの連絡先情報 */
+.reveal section.present:last-child p {
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: #555555;
+}
+
+/* 画面上部の点線を非表示にする */
+.reveal .progress {
+    display: none !important;
+}
